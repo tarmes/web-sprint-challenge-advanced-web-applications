@@ -20,6 +20,14 @@ body,
   }
 }
 
+.login-form-container {
+  justify-content: center;
+
+  input {
+    margin: 8px auto;
+  }
+}
+
 .spacer {
   height: 100%;
 }
