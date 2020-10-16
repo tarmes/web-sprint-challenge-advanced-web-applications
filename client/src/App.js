@@ -3,21 +3,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import BubblePage from './components/BubblePage';
 import Login from "./components/Login";
 import "./styles.scss";
-import { Link } from 'react-router-dom';
 import PrivateRoute from './components/PrivateRoute';
 
 function App() {
 	return (
 		<Router>
 			<div className="App">
-				<ul>
-					<li>
-						<Link to="/login">Login</Link>
-					</li>
-					<li>
-						<Link to="/bubbles">Bubbles</Link>
-					</li>
-				</ul>
 				<Switch>
 					<PrivateRoute 
 						exact 
